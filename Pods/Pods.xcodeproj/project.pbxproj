@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00398031CD2C63D00E2924B974552921 /* Pods-Yo!Food-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F83A84D5C54B9A8117C45AE363D0DB /* Pods-Yo!Food-dummy.m */; };
+		4857743AD823FEB6DE874E6FBE9209E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		57A0508625CFB6BCF83911311F716EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		71312AC26BBD70C7FC94134D78BF7818 /* Pods-Yo!FoodUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A588A2420DC0D392B020CE562B8D5F5 /* Pods-Yo!FoodUITests-dummy.m */; };
+		8CDFE1D092658769742FBEC283B1842C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		926FFCBEFC187F456230369B1EBEC02B /* Pods-Yo!FoodUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C89F5981F34D1CCAE2E5DF81E5C3921B /* Pods-Yo!FoodUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7FA0A0270BFC490F27A953CC3F812ED /* Pods-Yo!FoodTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 187F8A1A40CA399638DC8454211F27D1 /* Pods-Yo!FoodTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED7A9FAEDA37DD816E56C48A6C7CA20 /* Pods-Yo!Food-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D2967E728EF3A599C7857F03702133D /* Pods-Yo!Food-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC52A449417A87E6CBB66DAEB3F25A90 /* Pods-Yo!FoodTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C365E5A625824CCF50346E69752C2F38 /* Pods-Yo!FoodTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		106CE75C11057EDD2290498464895654 /* Pods-Yo!Food.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Yo!Food.modulemap"; sourceTree = "<group>"; };
+		154482621D5AF2D8608DCA172527DF13 /* Pods-Yo!FoodTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Yo!FoodTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		187F8A1A40CA399638DC8454211F27D1 /* Pods-Yo!FoodTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Yo!FoodTests-umbrella.h"; sourceTree = "<group>"; };
+		1CBAC37212922BB997D38CE2926CA7EA /* Pods-Yo!Food-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Yo!Food-resources.sh"; sourceTree = "<group>"; };
+		21599257B044EBCD030BF880366CB23B /* Pods-Yo!FoodTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Yo!FoodTests-resources.sh"; sourceTree = "<group>"; };
+		380A4BD5A016E1E083F16683B13DF89F /* Pods-Yo!FoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Yo!FoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		39EDD3B35D9C8DD4CDC45DF98607DAEA /* Pods_Yo_Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Yo_Food.framework; path = "Pods-Yo!Food.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2967E728EF3A599C7857F03702133D /* Pods-Yo!Food-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Yo!Food-umbrella.h"; sourceTree = "<group>"; };
+		40CE5CA77D426BADD647927C32CF0739 /* Pods-Yo!FoodUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Yo!FoodUITests-frameworks.sh"; sourceTree = "<group>"; };
+		50EE6E0FA28AAC8BD1159D23952BE3FE /* Pods-Yo!Food-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Yo!Food-acknowledgements.plist"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6E156D5CBE9EB00734DC7E46F309F810 /* Pods-Yo!FoodUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Yo!FoodUITests-resources.sh"; sourceTree = "<group>"; };
+		6FBBD23123314DFFE1F6137EAD5FA1E9 /* Pods-Yo!Food-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Yo!Food-frameworks.sh"; sourceTree = "<group>"; };
+		70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		75E3EF47AAAA14303CCC2A58A2254AC2 /* Pods-Yo!Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Yo!Food.release.xcconfig"; sourceTree = "<group>"; };
+		7BD57C614504434D12204A5727011699 /* Pods_Yo_FoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Yo_FoodUITests.framework; path = "Pods-Yo!FoodUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83101E5F9888B01C378A32BA3DE9EAD7 /* Pods-Yo!FoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Yo!FoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		83461295E6F13973D84EDC7A5C66A439 /* Pods-Yo!FoodTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Yo!FoodTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96E2F42FDC649DA7FDEDE1EAB382E97D /* Pods-Yo!FoodTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Yo!FoodTests-frameworks.sh"; sourceTree = "<group>"; };
+		9A588A2420DC0D392B020CE562B8D5F5 /* Pods-Yo!FoodUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Yo!FoodUITests-dummy.m"; sourceTree = "<group>"; };
+		9DA85A484B5D781E840A426724F5AA65 /* Pods_Yo_FoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Yo_FoodTests.framework; path = "Pods-Yo!FoodTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DCBA5ED5A1C6B95CD66EF4C3F899C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A45701E48537A18F3BB6BD76681CB360 /* Pods-Yo!FoodTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Yo!FoodTests.modulemap"; sourceTree = "<group>"; };
+		A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		AFD4D1E144CCB4285706E577C2602A44 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		C15428A22B21172E710C10F94C789DBC /* Pods-Yo!FoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Yo!FoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C365E5A625824CCF50346E69752C2F38 /* Pods-Yo!FoodTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Yo!FoodTests-dummy.m"; sourceTree = "<group>"; };
+		C89F5981F34D1CCAE2E5DF81E5C3921B /* Pods-Yo!FoodUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Yo!FoodUITests-umbrella.h"; sourceTree = "<group>"; };
+		D277ACF639B5012F836EDC26CE34FCD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F83A84D5C54B9A8117C45AE363D0DB /* Pods-Yo!Food-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Yo!Food-dummy.m"; sourceTree = "<group>"; };
+		D9E8314F114A6F070D5E0F335C481DB9 /* Pods-Yo!FoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Yo!FoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E072489F2A299CFA246EE73ECDAF0249 /* Pods-Yo!Food-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Yo!Food-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E18AA1D4BC48B6CAE93A90E0143E2158 /* Pods-Yo!FoodUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Yo!FoodUITests.modulemap"; sourceTree = "<group>"; };
+		EA0512A56F1F47F0BACDD2BEFF986121 /* Pods-Yo!FoodUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Yo!FoodUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EEA799D919661A2C6510C56388B76A95 /* Pods-Yo!Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Yo!Food.debug.xcconfig"; sourceTree = "<group>"; };
+		F5275A6B03E0AECE0334CF59F275E084 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88E2A6AB865C2A1EB845B27A14348FA /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		FE2F6A7785339F4891175B655E429E8D /* Pods-Yo!FoodUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Yo!FoodUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1284CA1572A054B8F3A4A1C5E4E0D360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDFE1D092658769742FBEC283B1842C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764ECAB63CFEBB7AF3675BAC94ECB00B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4857743AD823FEB6DE874E6FBE9209E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E84BFDBFD87422E174BBFF06EDA156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A0508625CFB6BCF83911311F716EC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				475420FA59EFC8377CF994A338979247 /* Frameworks */,
+				4F6C8AC648A5703DF2BEC96A882D19E9 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				B2F22323EA3B1ADB4F96376E3F709A68 /* Base */,
+				488E301C4ACDDA928635C4886F5F6158 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		385FA015FFB9210F372AB1078B856AAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */,
+				00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		475420FA59EFC8377CF994A338979247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		488E301C4ACDDA928635C4886F5F6158 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */,
+				FAC5D957D919553947FEE0A96B739CC4 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F6C8AC648A5703DF2BEC96A882D19E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F88E2A6AB865C2A1EB845B27A14348FA /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				385FA015FFB9210F372AB1078B856AAB /* Pods */,
+				AE82EF64DD66207E71A54F5828B4927C /* Products */,
+				80F7460C06A594DBB5CC718A34AA4614 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80F7460C06A594DBB5CC718A34AA4614 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB003505E0314C517B3E8C84B1C255 /* Pods-Yo!Food */,
+				E3A0D8C7990611E46F6E46E9751B18D1 /* Pods-Yo!FoodTests */,
+				892300CE2C2A7096B978BAAD0896CC71 /* Pods-Yo!FoodUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */,
+				A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		892300CE2C2A7096B978BAAD0896CC71 /* Pods-Yo!FoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1DCBA5ED5A1C6B95CD66EF4C3F899C2 /* Info.plist */,
+				E18AA1D4BC48B6CAE93A90E0143E2158 /* Pods-Yo!FoodUITests.modulemap */,
+				FE2F6A7785339F4891175B655E429E8D /* Pods-Yo!FoodUITests-acknowledgements.markdown */,
+				EA0512A56F1F47F0BACDD2BEFF986121 /* Pods-Yo!FoodUITests-acknowledgements.plist */,
+				9A588A2420DC0D392B020CE562B8D5F5 /* Pods-Yo!FoodUITests-dummy.m */,
+				40CE5CA77D426BADD647927C32CF0739 /* Pods-Yo!FoodUITests-frameworks.sh */,
+				6E156D5CBE9EB00734DC7E46F309F810 /* Pods-Yo!FoodUITests-resources.sh */,
+				C89F5981F34D1CCAE2E5DF81E5C3921B /* Pods-Yo!FoodUITests-umbrella.h */,
+				C15428A22B21172E710C10F94C789DBC /* Pods-Yo!FoodUITests.debug.xcconfig */,
+				D9E8314F114A6F070D5E0F335C481DB9 /* Pods-Yo!FoodUITests.release.xcconfig */,
+			);
+			name = "Pods-Yo!FoodUITests";
+			path = "Target Support Files/Pods-Yo!FoodUITests";
+			sourceTree = "<group>";
+		};
+		AE82EF64DD66207E71A54F5828B4927C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39EDD3B35D9C8DD4CDC45DF98607DAEA /* Pods_Yo_Food.framework */,
+				9DA85A484B5D781E840A426724F5AA65 /* Pods_Yo_FoodTests.framework */,
+				7BD57C614504434D12204A5727011699 /* Pods_Yo_FoodUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F22323EA3B1ADB4F96376E3F709A68 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E3A0D8C7990611E46F6E46E9751B18D1 /* Pods-Yo!FoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5275A6B03E0AECE0334CF59F275E084 /* Info.plist */,
+				A45701E48537A18F3BB6BD76681CB360 /* Pods-Yo!FoodTests.modulemap */,
+				83461295E6F13973D84EDC7A5C66A439 /* Pods-Yo!FoodTests-acknowledgements.markdown */,
+				154482621D5AF2D8608DCA172527DF13 /* Pods-Yo!FoodTests-acknowledgements.plist */,
+				C365E5A625824CCF50346E69752C2F38 /* Pods-Yo!FoodTests-dummy.m */,
+				96E2F42FDC649DA7FDEDE1EAB382E97D /* Pods-Yo!FoodTests-frameworks.sh */,
+				21599257B044EBCD030BF880366CB23B /* Pods-Yo!FoodTests-resources.sh */,
+				187F8A1A40CA399638DC8454211F27D1 /* Pods-Yo!FoodTests-umbrella.h */,
+				83101E5F9888B01C378A32BA3DE9EAD7 /* Pods-Yo!FoodTests.debug.xcconfig */,
+				380A4BD5A016E1E083F16683B13DF89F /* Pods-Yo!FoodTests.release.xcconfig */,
+			);
+			name = "Pods-Yo!FoodTests";
+			path = "Target Support Files/Pods-Yo!FoodTests";
+			sourceTree = "<group>";
+		};
+		F2FB003505E0314C517B3E8C84B1C255 /* Pods-Yo!Food */ = {
+			isa = PBXGroup;
+			children = (
+				D277ACF639B5012F836EDC26CE34FCD1 /* Info.plist */,
+				106CE75C11057EDD2290498464895654 /* Pods-Yo!Food.modulemap */,
+				E072489F2A299CFA246EE73ECDAF0249 /* Pods-Yo!Food-acknowledgements.markdown */,
+				50EE6E0FA28AAC8BD1159D23952BE3FE /* Pods-Yo!Food-acknowledgements.plist */,
+				D2F83A84D5C54B9A8117C45AE363D0DB /* Pods-Yo!Food-dummy.m */,
+				6FBBD23123314DFFE1F6137EAD5FA1E9 /* Pods-Yo!Food-frameworks.sh */,
+				1CBAC37212922BB997D38CE2926CA7EA /* Pods-Yo!Food-resources.sh */,
+				3D2967E728EF3A599C7857F03702133D /* Pods-Yo!Food-umbrella.h */,
+				EEA799D919661A2C6510C56388B76A95 /* Pods-Yo!Food.debug.xcconfig */,
+				75E3EF47AAAA14303CCC2A58A2254AC2 /* Pods-Yo!Food.release.xcconfig */,
+			);
+			name = "Pods-Yo!Food";
+			path = "Target Support Files/Pods-Yo!Food";
+			sourceTree = "<group>";
+		};
+		FAC5D957D919553947FEE0A96B739CC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFD4D1E144CCB4285706E577C2602A44 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		77E43ADB72AD4AB761909B7FF8360FED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED7A9FAEDA37DD816E56C48A6C7CA20 /* Pods-Yo!Food-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D5B1B603C760895BCD42336C8AADB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926FFCBEFC187F456230369B1EBEC02B /* Pods-Yo!FoodUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18BEA893996BB6E18E0BED65E1801DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7FA0A0270BFC490F27A953CC3F812ED /* Pods-Yo!FoodTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B39B98411590F4473D15A39AE768E7C /* Pods-Yo!Food */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944E8ECFC073E410C127941841CC2D85 /* Build configuration list for PBXNativeTarget "Pods-Yo!Food" */;
+			buildPhases = (
+				F768E6B658B2CAFDEC763794EEAE7266 /* Sources */,
+				B6E84BFDBFD87422E174BBFF06EDA156 /* Frameworks */,
+				77E43ADB72AD4AB761909B7FF8360FED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Yo!Food";
+			productName = "Pods-Yo!Food";
+			productReference = 39EDD3B35D9C8DD4CDC45DF98607DAEA /* Pods_Yo_Food.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B4F16751C7F9378A380A3BC5B9791A9 /* Pods-Yo!FoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1B234047CB05C5E990B80AE899725F0 /* Build configuration list for PBXNativeTarget "Pods-Yo!FoodUITests" */;
+			buildPhases = (
+				C2B7472FC7BF60B139AA7C44D6210942 /* Sources */,
+				764ECAB63CFEBB7AF3675BAC94ECB00B /* Frameworks */,
+				B3D5B1B603C760895BCD42336C8AADB5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Yo!FoodUITests";
+			productName = "Pods-Yo!FoodUITests";
+			productReference = 7BD57C614504434D12204A5727011699 /* Pods_Yo_FoodUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4248A70265E0E7BC17AB24C34344CE4 /* Pods-Yo!FoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9E6B53D6B37F772BEA76A2B1248955 /* Build configuration list for PBXNativeTarget "Pods-Yo!FoodTests" */;
+			buildPhases = (
+				A23CBB79E541AC71FC24963CAF13A663 /* Sources */,
+				1284CA1572A054B8F3A4A1C5E4E0D360 /* Frameworks */,
+				D18BEA893996BB6E18E0BED65E1801DF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Yo!FoodTests";
+			productName = "Pods-Yo!FoodTests";
+			productReference = 9DA85A484B5D781E840A426724F5AA65 /* Pods_Yo_FoodTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AE82EF64DD66207E71A54F5828B4927C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B39B98411590F4473D15A39AE768E7C /* Pods-Yo!Food */,
+				B4248A70265E0E7BC17AB24C34344CE4 /* Pods-Yo!FoodTests */,
+				6B4F16751C7F9378A380A3BC5B9791A9 /* Pods-Yo!FoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A23CBB79E541AC71FC24963CAF13A663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC52A449417A87E6CBB66DAEB3F25A90 /* Pods-Yo!FoodTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B7472FC7BF60B139AA7C44D6210942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71312AC26BBD70C7FC94134D78BF7818 /* Pods-Yo!FoodUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F768E6B658B2CAFDEC763794EEAE7266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00398031CD2C63D00E2924B974552921 /* Pods-Yo!Food-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		301D5B432C54F4D749AD78150162B183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA799D919661A2C6510C56388B76A95 /* Pods-Yo!Food.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Yo!Food/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Yo!Food/Pods-Yo!Food.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Yo_Food;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E91E06EA89391CCDA29FCFEEF294F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83101E5F9888B01C378A32BA3DE9EAD7 /* Pods-Yo!FoodTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Yo!FoodTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Yo!FoodTests/Pods-Yo!FoodTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Yo_FoodTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DDA4086F728F189296F6CEBB332C36F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380A4BD5A016E1E083F16683B13DF89F /* Pods-Yo!FoodTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Yo!FoodTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Yo!FoodTests/Pods-Yo!FoodTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Yo_FoodTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4FF7929BD559115450E25BBEE91ABB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E8314F114A6F070D5E0F335C481DB9 /* Pods-Yo!FoodUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Yo!FoodUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Yo!FoodUITests/Pods-Yo!FoodUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Yo_FoodUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC7002EF341BA54C8DC84901E208DDDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E3EF47AAAA14303CCC2A58A2254AC2 /* Pods-Yo!Food.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Yo!Food/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Yo!Food/Pods-Yo!Food.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Yo_Food;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFDA6A6167BA8523AAC1BCA18E4E4A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15428A22B21172E710C10F94C789DBC /* Pods-Yo!FoodUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Yo!FoodUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Yo!FoodUITests/Pods-Yo!FoodUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Yo_FoodUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		944E8ECFC073E410C127941841CC2D85 /* Build configuration list for PBXNativeTarget "Pods-Yo!Food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301D5B432C54F4D749AD78150162B183 /* Debug */,
+				EC7002EF341BA54C8DC84901E208DDDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9E6B53D6B37F772BEA76A2B1248955 /* Build configuration list for PBXNativeTarget "Pods-Yo!FoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E91E06EA89391CCDA29FCFEEF294F5 /* Debug */,
+				8DDA4086F728F189296F6CEBB332C36F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B234047CB05C5E990B80AE899725F0 /* Build configuration list for PBXNativeTarget "Pods-Yo!FoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDA6A6167BA8523AAC1BCA18E4E4A2F /* Debug */,
+				B4FF7929BD559115450E25BBEE91ABB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
