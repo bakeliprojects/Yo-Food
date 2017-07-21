@@ -10,15 +10,16 @@ import UIKit
 import GoogleMaps
 import CoreLocation // provides services for determining a devicee's geographic
                     // location, altitude, orientation ...
+import RealmSwift
 
 class DeliveryDetailController: UIViewController, UITextFieldDelegate, GMSMapViewDelegate{
 
     // MARK: Properties
-    var numPlates = 0
-    var phoneNumber = Int()
-    var mealName = String()
+    let realm = try! Realm()
     var deliveryAdress = GMSMarker()
+    var tempOrder = CustomerOrderModel()
     let locationManager = CLLocationManager()
+    
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var numPlatesTextfield: UITextField!
     @IBOutlet weak var phoneNumberTextfield: UITextField!
@@ -39,7 +40,7 @@ class DeliveryDetailController: UIViewController, UITextFieldDelegate, GMSMapVie
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        mealNameLabel.text = mealName
+        mealNameLabel.text = tempOrder.meal
     }
     
     // Hide the keyboard when not needed
@@ -49,6 +50,7 @@ class DeliveryDetailController: UIViewController, UITextFieldDelegate, GMSMapVie
     
     // Delete any existing marker && add a new one at the new location
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        
         deliveryAdress.map = nil
         let position = CLLocationCoordinate2DMake((coordinate.latitude), (coordinate.longitude))
         let marker = GMSMarker(position: position)
@@ -57,13 +59,17 @@ class DeliveryDetailController: UIViewController, UITextFieldDelegate, GMSMapVie
         deliveryAdress = marker
     }
     
-    @IBAction func submitButtonPressed(_ sender: Any) {
-        numPlates = Int(numPlatesTextfield.text!)!
-        phoneNumber = Int(phoneNumberTextfield.text!)!
-        print(numPlates)
-        print(phoneNumber)
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PickDeliveryManSegue" {
+            let destination = segue.destination as! DeliveryManPickerController
+            tempOrder.phoneNumber = Int(phoneNumberTextfield.text!)!
+            tempOrder.quantity = Int(numPlatesTextfield.text!)!
+            destination.tempOrder = tempOrder
+            destination.deliveryAdress = deliveryAdress
+        }
     }
-    
+
 }
 
 

@@ -8,41 +8,49 @@
 
 import UIKit
 import GoogleMaps
+import RealmSwift
 
 class DeliveryManPickerController: UIViewController, GMSMapViewDelegate {
 
     // MARK : Properties
-    @IBOutlet weak var mapView: GMSMapView!
+    let realm = try! Realm()
+    var tempOrder = CustomerOrderModel()
+    var deliveryAdress = GMSMarker()
     let initialCameraPosition = CLLocation(latitude: 14.746913609477028, longitude: -17.462822377834527)
+    
+    @IBOutlet weak var mapView: GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         
-        let position = CLLocationCoordinate2DMake(14.746913609477028, -17.462822377834527)
+        let deliveryMen = realm.objects(DeliveryManModel.self)
         mapView.camera = GMSCameraPosition(target: initialCameraPosition.coordinate, zoom: 12, bearing: 0, viewingAngle: 0)
-        let marker = GMSMarker(position: position)
-        marker.map = mapView
+        
+        // Create Markers for the delivery men
+        for deliveryMan in deliveryMen {
+            let position = CLLocationCoordinate2DMake(deliveryMan.latitude, deliveryMan.longitude)
+            var marker = GMSMarker()
+            marker = GMSMarker(position: position)
+            marker.title = deliveryMan.name
+            marker.map = mapView
+        }
         
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func yadayada(alert: UIAlertAction!) {
-        print("Hello World")
-        let vc = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(withIdentifier: "OrderSummary")
-        self.navigationController?.pushViewController(vc, animated:true)
-        print("Success")
-    }
-    
+
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-      
+        
+        var pickedDeliveryMan = realm.objects(DeliveryManModel.self).filter("name == %@", marker.title!).first
+
         let alertController = UIAlertController(
-            title: "Lamine Dieng",
-            message: "Age: 24\n Vehicule: Velo",
+            title: pickedDeliveryMan?.name,
+            message: "Age: \(pickedDeliveryMan!.age) \n Vehicule: \(pickedDeliveryMan!.typeOfVehicle)",
             preferredStyle: .alert
         )
         
@@ -55,8 +63,11 @@ class DeliveryManPickerController: UIViewController, GMSMapViewDelegate {
         let confirmAction = UIAlertAction(
             title: "Valider",
             style: .default,
-            handler: yadayada
-            
+            handler:
+                 {
+                    _in in self.tempOrder.deliveryMan = pickedDeliveryMan!
+                    self.performSegue(withIdentifier: "OrderSummarySegue", sender: self)
+                  }
         )
         
         alertController.addAction(confirmAction)
@@ -65,10 +76,13 @@ class DeliveryManPickerController: UIViewController, GMSMapViewDelegate {
         return true
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "OrderSummarySegue" {
+            let destination = segue.destination as! OrderSummaryController
+            destination.tempOrder = tempOrder
+            destination.deliveryAdress = deliveryAdress
+        }
+    }
+
 }
 
-//14.7303591624653  -17.469842210412
-// 14.7115787049203 -17.4459571391344
-//14.7242756983758  -17.4888040870428
-//14.6803627854525  -17.4654661864042
-//14.7399258209224  -17.4222001433372

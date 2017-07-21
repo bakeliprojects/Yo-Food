@@ -18,6 +18,10 @@
 		78470B161F1E0909003F0E0C /* DeliveryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78470B151F1E0909003F0E0C /* DeliveryDetailController.swift */; };
 		78470B181F1E7ED1003F0E0C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 78470B171F1E7ED1003F0E0C /* Podfile */; };
 		78470B1A1F1F6C11003F0E0C /* DeliveryManPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78470B191F1F6C11003F0E0C /* DeliveryManPickerController.swift */; };
+		78470B1C1F1FD62A003F0E0C /* OrderSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78470B1B1F1FD62A003F0E0C /* OrderSummaryController.swift */; };
+		78E4639B1F20C59700CB7E13 /* DeliveryManModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E4639A1F20C59700CB7E13 /* DeliveryManModel.swift */; };
+		78E4639E1F210E8500CB7E13 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E4639D1F210E8500CB7E13 /* MenuModel.swift */; };
+		78E463A11F2114FF00CB7E13 /* CustomerOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E463A01F2114FF00CB7E13 /* CustomerOrderModel.swift */; };
 		C68AB96B173BCD0781C3D3C6 /* Pods_Yo_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2586C29B67A799216179A42 /* Pods_Yo_Food.framework */; };
 		F9904BD638F7A2EB0578F556 /* Pods_Yo_FoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D066A301BEFFA14A94245627 /* Pods_Yo_FoodTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +63,10 @@
 		78470B151F1E0909003F0E0C /* DeliveryDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeliveryDetailController.swift; path = ../DeliveryDetailController.swift; sourceTree = "<group>"; };
 		78470B171F1E7ED1003F0E0C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		78470B191F1F6C11003F0E0C /* DeliveryManPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryManPickerController.swift; sourceTree = "<group>"; };
+		78470B1B1F1FD62A003F0E0C /* OrderSummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSummaryController.swift; sourceTree = "<group>"; };
+		78E4639A1F20C59700CB7E13 /* DeliveryManModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryManModel.swift; sourceTree = "<group>"; };
+		78E4639D1F210E8500CB7E13 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		78E463A01F2114FF00CB7E13 /* CustomerOrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerOrderModel.swift; sourceTree = "<group>"; };
 		8D48FA62ED132B9FE3674BD7 /* Pods_Yo_FoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yo_FoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8BF7C4F6CA0ACDE68F00DC /* Pods-Yo!FoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo!FoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yo!FoodUITests/Pods-Yo!FoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A10D88152A15A35440771222 /* Pods-Yo!FoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yo!FoodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yo!FoodUITests/Pods-Yo!FoodUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,9 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				78470AE51F1E06E8003F0E0C /* AppDelegate.swift */,
-				78470B131F1E0754003F0E0C /* MenuViewController.swift */,
-				78470B151F1E0909003F0E0C /* DeliveryDetailController.swift */,
-				78470B191F1F6C11003F0E0C /* DeliveryManPickerController.swift */,
+				78E4639F1F210E9000CB7E13 /* ViewControllers */,
+				78E4639C1F20C5C200CB7E13 /* Models */,
 				78470AE91F1E06E8003F0E0C /* Main.storyboard */,
 				78470AEC1F1E06E8003F0E0C /* Assets.xcassets */,
 				78470AEE1F1E06E8003F0E0C /* LaunchScreen.storyboard */,
@@ -162,6 +169,27 @@
 				78470B071F1E06E8003F0E0C /* Info.plist */,
 			);
 			path = "Yo!FoodUITests";
+			sourceTree = "<group>";
+		};
+		78E4639C1F20C5C200CB7E13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78E463A01F2114FF00CB7E13 /* CustomerOrderModel.swift */,
+				78E4639D1F210E8500CB7E13 /* MenuModel.swift */,
+				78E4639A1F20C59700CB7E13 /* DeliveryManModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		78E4639F1F210E9000CB7E13 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				78470B131F1E0754003F0E0C /* MenuViewController.swift */,
+				78470B151F1E0909003F0E0C /* DeliveryDetailController.swift */,
+				78470B191F1F6C11003F0E0C /* DeliveryManPickerController.swift */,
+				78470B1B1F1FD62A003F0E0C /* OrderSummaryController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		8705A340D8CB7393754ED21F /* Frameworks */ = {
@@ -459,10 +487,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E4639E1F210E8500CB7E13 /* MenuModel.swift in Sources */,
 				78470B141F1E0754003F0E0C /* MenuViewController.swift in Sources */,
 				78470B161F1E0909003F0E0C /* DeliveryDetailController.swift in Sources */,
+				78E463A11F2114FF00CB7E13 /* CustomerOrderModel.swift in Sources */,
 				78470B1A1F1F6C11003F0E0C /* DeliveryManPickerController.swift in Sources */,
 				78470AE61F1E06E8003F0E0C /* AppDelegate.swift in Sources */,
+				78470B1C1F1FD62A003F0E0C /* OrderSummaryController.swift in Sources */,
+				78E4639B1F20C59700CB7E13 /* DeliveryManModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

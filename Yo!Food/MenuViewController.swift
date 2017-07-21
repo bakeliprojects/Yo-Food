@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MenuViewController: UITableViewController {
 
     // Properties
+    var menu: Results<MenuModel>?
+    //var tempOrder = OrderModel()
+    var tempOrder = CustomerOrderModel()
+    let realm = try! Realm()
     let deliveryDetailSegueIdentifier = "ShowDeliveryDetailSegue"
-    let meals = ["Yassa", "mafé", "Thiebou Guinar", "Soup Kandja", "Thiebou djeun", "Thiebou Yapp", "Païla", "C'est Bon", "Thiou Curry"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        menu = realm.objects(MenuModel.self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +37,7 @@ class MenuViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return meals.count
+        return menu!.count
     }
     
     
@@ -40,20 +45,19 @@ class MenuViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
         
         // cell configuration
-        cell.textLabel?.text = meals[indexPath.row]
+        //let menu = realm.objects(MenuModel.self)
+        cell.textLabel?.text = menu?[indexPath.row].meal
         return cell
     }
-    
-    override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(meals[indexPath.row])
-    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == deliveryDetailSegueIdentifier {
             let destination = segue.destination as! DeliveryDetailController
             let selectedRow = tableView.indexPathForSelectedRow?.row
-            destination.mealName = meals[selectedRow!]
+            tempOrder.meal = (menu?[selectedRow!].meal)!
+            destination.tempOrder = tempOrder
             
         }
     }
+    
 }
