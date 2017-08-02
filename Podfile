@@ -8,8 +8,10 @@ target 'Yo!Food' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'RealmSwift'
-  pod ‘Alamofire’
-  
+  pod 'Alamofire', '~> 4.4'
+  pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'ObjectMapper', '~> 2.2'
+
   # Pods for Yo!Food
 
   target 'Yo!FoodTests' do
