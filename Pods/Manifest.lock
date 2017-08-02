@@ -18,7 +18,7 @@ PODS:
     - Realm (= 2.8.3)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
+  - Alamofire
   - AlamofireObjectMapper (~> 4.0)
   - GoogleMaps
   - GooglePlaces
@@ -34,6 +34,6 @@ SPEC CHECKSUMS:
   Realm: 3601ef091c8c499a31101d8563b991e75546cdce
   RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
 
-PODFILE CHECKSUM: 5f68ef74ee4577fbe1fb80be590bfcb0631b35b8
+PODFILE CHECKSUM: 0eaf9f930d51c7647ea7465722ab9de4bef34762
 
 COCOAPODS: 1.2.1

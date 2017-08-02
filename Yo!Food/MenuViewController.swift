@@ -26,6 +26,13 @@ class MenuViewController: UITableViewController {
         Alamofire.request(yoFoodAPImeals, method: .get)
             .responseJSON { response in
                 
+                FetchData.get(type: MenuModel.self,
+                              success: { print("Success")})
+                { (error) in print(error)}
+                
+                self.menu = self.realm.objects(MenuModel.self)
+                
+                /*
                 guard response.result.error == nil else {
                     // got an error in getting the data, need to handle it
                     print("error calling GET on /todos/1")
@@ -56,7 +63,7 @@ class MenuViewController: UITableViewController {
                         self.realm.add(newMeal, update: true)
                     }
                     
-                }
+                }*/
                 
         }
         
