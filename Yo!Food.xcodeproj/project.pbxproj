@@ -19,6 +19,7 @@
 		78470B181F1E7ED1003F0E0C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 78470B171F1E7ED1003F0E0C /* Podfile */; };
 		78470B1A1F1F6C11003F0E0C /* DeliveryManPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78470B191F1F6C11003F0E0C /* DeliveryManPickerController.swift */; };
 		78470B1C1F1FD62A003F0E0C /* OrderSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78470B1B1F1FD62A003F0E0C /* OrderSummaryController.swift */; };
+		7875E39A1F323FB800B284F4 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7875E3991F323FB800B284F4 /* FetchData.swift */; };
 		78E4639B1F20C59700CB7E13 /* DeliveryManModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E4639A1F20C59700CB7E13 /* DeliveryManModel.swift */; };
 		78E4639E1F210E8500CB7E13 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E4639D1F210E8500CB7E13 /* MenuModel.swift */; };
 		78E463A11F2114FF00CB7E13 /* CustomerOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E463A01F2114FF00CB7E13 /* CustomerOrderModel.swift */; };
@@ -64,6 +65,7 @@
 		78470B171F1E7ED1003F0E0C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		78470B191F1F6C11003F0E0C /* DeliveryManPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryManPickerController.swift; sourceTree = "<group>"; };
 		78470B1B1F1FD62A003F0E0C /* OrderSummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSummaryController.swift; sourceTree = "<group>"; };
+		7875E3991F323FB800B284F4 /* FetchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 		78E4639A1F20C59700CB7E13 /* DeliveryManModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryManModel.swift; sourceTree = "<group>"; };
 		78E4639D1F210E8500CB7E13 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		78E463A01F2114FF00CB7E13 /* CustomerOrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerOrderModel.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				78470B171F1E7ED1003F0E0C /* Podfile */,
+				7875E3991F323FB800B284F4 /* FetchData.swift */,
 				78470AE41F1E06E8003F0E0C /* Yo!Food */,
 				78470AF91F1E06E8003F0E0C /* Yo!FoodTests */,
 				78470B041F1E06E8003F0E0C /* Yo!FoodUITests */,
@@ -494,6 +497,7 @@
 				78470B1A1F1F6C11003F0E0C /* DeliveryManPickerController.swift in Sources */,
 				78470AE61F1E06E8003F0E0C /* AppDelegate.swift in Sources */,
 				78470B1C1F1FD62A003F0E0C /* OrderSummaryController.swift in Sources */,
+				7875E39A1F323FB800B284F4 /* FetchData.swift in Sources */,
 				78E4639B1F20C59700CB7E13 /* DeliveryManModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
