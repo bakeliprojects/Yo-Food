@@ -46,21 +46,24 @@ class MenuViewController: UITableViewController {
                     return
                 }
                 
-                for meal in meals {
-                    print(meal["name"]!)
-                    var newMeal = MenuModel()
-                    newMeal.meal = meal["name"] as! String
-                    newMeal.id = meal["id"] as! Int
+                
+                try! self.realm.write {
                     
-                    try! self.realm.write {
-                        self.realm.add(newMeal, update:true)
+                    for meal in meals {
+                        var newMeal = MenuModel()
+                        newMeal.meal = meal["name"] as! String
+                        newMeal.id = meal["id"] as! Int
+                        self.realm.add(newMeal, update: true)
                     }
                     
                 }
                 
         }
         
-        menu = realm.objects(MenuModel.self)
+        menu = self.realm.objects(MenuModel.self)
+        for i in menu! {
+            print(i.meal)
+        }
     }
 
     override func didReceiveMemoryWarning() {
