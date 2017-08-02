@@ -8,6 +8,7 @@ target 'Yo!Food' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'RealmSwift'
+  pod ‘Alamofire’
   
   # Pods for Yo!Food
 

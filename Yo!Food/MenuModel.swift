@@ -10,5 +10,10 @@ import UIKit
 import RealmSwift
 
 class MenuModel: Object {
+    dynamic var id = 0
     dynamic var meal = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

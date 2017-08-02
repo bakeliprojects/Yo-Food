@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import Alamofire
 
 class MenuViewController: UITableViewController {
 
@@ -17,9 +18,48 @@ class MenuViewController: UITableViewController {
     var tempOrder = CustomerOrderModel()
     let realm = try! Realm()
     let deliveryDetailSegueIdentifier = "ShowDeliveryDetailSegue"
+    let yoFoodAPImeals = "http://192.168.1.33:8000/yofoodapi/public/api/meals"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Alamofire.request(yoFoodAPImeals, method: .get)
+            .responseJSON { response in
+                
+                guard response.result.error == nil else {
+                    // got an error in getting the data, need to handle it
+                    print("error calling GET on /todos/1")
+                    print(response.result.error!)
+                    return
+                }
+                
+                // make sure we got some JSON since that's what we expect
+                guard let json = response.result.value as? [String: Any] else {
+                    print("didn't get todo object as JSON from API")
+                    print("Error: \(String(describing: response.result.error))")
+                    return
+                }
+                
+                
+                guard let meals = json["data"] as? [[String: Any]] else {
+                    print("could not convert data to array")
+                    return
+                }
+                
+                for meal in meals {
+                    print(meal["name"]!)
+                    var newMeal = MenuModel()
+                    newMeal.meal = meal["name"] as! String
+                    newMeal.id = meal["id"] as! Int
+                    
+                    try! self.realm.write {
+                        self.realm.add(newMeal, update:true)
+                    }
+                    
+                }
+                
+        }
+        
         menu = realm.objects(MenuModel.self)
     }
 
@@ -50,6 +90,7 @@ class MenuViewController: UITableViewController {
         return cell
     }
 
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == deliveryDetailSegueIdentifier {
             let destination = segue.destination as! DeliveryDetailController
