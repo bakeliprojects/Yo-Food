@@ -23,54 +23,12 @@ class MenuViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Alamofire.request(yoFoodAPImeals, method: .get)
-            .responseJSON { response in
-                
-                FetchData.get(type: MenuModel.self,
-                              success: { print("Success")})
-                { (error) in print(error)}
-                
-                self.menu = self.realm.objects(MenuModel.self)
-                
-                /*
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print("error calling GET on /todos/1")
-                    print(response.result.error!)
-                    return
-                }
-                
-                // make sure we got some JSON since that's what we expect
-                guard let json = response.result.value as? [String: Any] else {
-                    print("didn't get todo object as JSON from API")
-                    print("Error: \(String(describing: response.result.error))")
-                    return
-                }
-                
-                
-                guard let meals = json["data"] as? [[String: Any]] else {
-                    print("could not convert data to array")
-                    return
-                }
-                
-                
-                try! self.realm.write {
-                    
-                    for meal in meals {
-                        var newMeal = MenuModel()
-                        newMeal.meal = meal["name"] as! String
-                        newMeal.id = meal["id"] as! Int
-                        self.realm.add(newMeal, update: true)
-                    }
-                    
-                }*/
-                
-        }
+        FetchData.get(type: MenuModel.self,
+                      success: { print("Success")})
+        { (error) in print(error)}
         
         menu = self.realm.objects(MenuModel.self)
-        for i in menu! {
-            print(i.meal)
-        }
+        
     }
 
     override func didReceiveMemoryWarning() {
