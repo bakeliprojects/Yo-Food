@@ -38,7 +38,7 @@ class FetchData {
                     success()
                 case .failure(let error):
                     print("Yamadooor")
-                    fail(error as NSError)fff
+                    fail(error as NSError)
                 }
         }
     }
