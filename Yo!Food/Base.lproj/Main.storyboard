@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller-->
+        <!--Menu-->
         <scene sceneID="t2g-wZ-wOm">
             <objects>
                 <tableViewController id="5J6-Wq-cL1" customClass="MenuViewController" customModule="Yo_Food" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0pv-PE-QUC" id="Obr-d1-5g6">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -36,7 +36,13 @@
                             <outlet property="delegate" destination="5J6-Wq-cL1" id="Om9-vo-Igy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9Ou-Ez-b8S"/>
+                    <navigationItem key="navigationItem" title="Menu" id="Mms-ne-NR7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="ZcC-T0-hg0">
+                            <connections>
+                                <segue destination="cm0-ym-f3E" kind="show" id="TzX-Bd-IwT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3I-PG-PGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,8 +60,8 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="frZ-Vv-1fm">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="frZ-Vv-1fm" id="cjs-3X-HZX">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="orderViewIdentifier" tableViewCell="frZ-Vv-1fm" id="cjs-3X-HZX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
