@@ -8,17 +8,20 @@
 
 import UIKit
 import GoogleMaps
+import RealmSwift
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var menu: Results<MenuModel>?
     var window: UIWindow?
+    let realm = try! Realm()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
          GMSServices.provideAPIKey("AIzaSyDhpK7Ej65fNOH9a_3KWtHixZktv4exFgM")
-        
         return true
     }
 

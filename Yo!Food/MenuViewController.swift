@@ -18,11 +18,11 @@ class MenuViewController: UITableViewController {
     var tempOrder = CustomerOrderModel()
     let realm = try! Realm()
     let deliveryDetailSegueIdentifier = "ShowDeliveryDetailSegue"
-    let yoFoodAPImeals = "http://192.168.1.33:8000/yofoodapi/public/api/meals"
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Fetch the data from the API and store them into REALM
         FetchData.get(type: MenuModel.self,
                       success: { print("Success")})
         { (error) in print(error)}
@@ -31,6 +31,7 @@ class MenuViewController: UITableViewController {
         
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

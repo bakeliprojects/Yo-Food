@@ -24,8 +24,13 @@ class DeliveryManPickerController: UIViewController, GMSMapViewDelegate {
         super.viewDidLoad()
         mapView.delegate = self
         
-        let deliveryMen = realm.objects(DeliveryManModel.self)
-        mapView.camera = GMSCameraPosition(target: initialCameraPosition.coordinate, zoom: 12, bearing: 0, viewingAngle: 0)
+        // Fetch the data from the API and store them into REALM
+        FetchData.get(type: DeliveryManModel.self,
+                      success: { print("Success")})
+        { (error) in print(error)}
+        
+        var deliveryMen = self.realm.objects(DeliveryManModel.self)
+        mapView.camera = GMSCameraPosition(target: initialCameraPosition.coordinate, zoom: 0, bearing: 0, viewingAngle: 0)
         
         // Create Markers for the delivery men
         for deliveryMan in deliveryMen {
